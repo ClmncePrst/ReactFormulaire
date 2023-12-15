@@ -15,7 +15,7 @@ const Formulaire = () => {
         let age = parseInt(event.target.value);
         //mise à jour des données avec l'âge entré dans le formulaire
         setFormData({ ...formData, age });
-        //si l'âge est inférieur à 1! ans, afficher un message d'erreur
+        //si l'âge est inférieur à 18 ans, afficher un message d'erreur
         if (age < 18) {
             setAgeLimit('Vous devez avoir plus de 18 ans.')
         }
